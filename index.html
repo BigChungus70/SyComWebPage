@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="LogoPic1.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   
+    <title>Home</title>
+</head>
+<body>
+  <div>
+    <header id="header">
+     
+    <a href="index.html" class="logo"><img src="LogoPic2.png" alt=""></a>
+    <div class="toggle"></div>
+    <ul class="navigation">
+  <li><a href="index.html" class="logo">Home</a></li>
+  <li><a href="#" class="logo">Gallery</a></li>
+  <li><a href="#" class="logo">Staff</a></li>
+    </ul>
+  
+</header>
+</div>
+
+  <section style="background: black;">
+    
+<img src="ساعة حمص.png" id="homs" alt=""> <div class="container"><p class="textar">تعتبر اللغة العربية إحدى اللغات الجميلة والغنية التي تمتلك تاريخاً عظيماً. إنها لغة عريقة تتميز بالأدب الغني والشعر الجميل. العربية ليست فقط وسيلة للتواصل، بل هي أيضاً جزء من الهوية والثقافة. يعتبر القرآن الكريم مصدر إلهام للغة العربية، حيث يتميز بأسلوبه الرفيع والجميل.
+
+  تشتمل اللغة العربية على عدد كبير من المفردات والمصطلحات التي تعبر عن التنوع الثقافي للمنطقة. الأدب والفنون في العالم العربي يعكسان التراث العريق والإبداع الفريد. يُشجع على تعلم اللغة العربية لفهم عمق الفهم للثقافة والتواصل مع المجتمع العربي."
+  
+  أتمنى أن يكون هذا النص قد نال إعجابك! إذا كنت بحاجة إلى أي مساعدة أو لديك أسئلة إضافية، فلا تتردد في طرحها.
+</p></div>
+  </section>
+  <section style="background: lightblue;">
+    
+   <div class="container" ><p class="texten" style="background-color: aqua;">تعتبر اللغة العربية إحدى اللغات الجميلة والغنية التي تمتلك تاريخاً عظيماً. إنها لغة عريقة تتميز بالأدب الغني والشعر الجميل. العربية ليست فقط وسيلة للتواصل، بل هي أيضاً جزء من الهوية والثقافة. يعتبر القرآن الكريم مصدر إلهام للغة العربية، حيث يتميز بأسلوبه الرفيع والجميل.
+    
+      تشتمل اللغة العربية على عدد كبير من المفردات والمصطلحات التي تعبر عن التنوع الثقافي للمنطقة. الأدب والفنون في العالم العربي يعكسان التراث العريق والإبداع الفريد. يُشجع على تعلم اللغة العربية لفهم عمق الفهم للثقافة والتواصل مع المجتمع العربي."
+      
+      أتمنى أن يكون هذا النص قد نال إعجابك! إذا كنت بحاجة إلى أي مساعدة أو لديك أسئلة إضافية، فلا تتردد في طرحها.
+    </p></div>
+
+    <script>
+let homs = document.getElementById('homs');
+let section = document.querySelector('section');
+let header = document.getElementById('header');
+window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+    let scrollLimit = section.offsetLeft + section.offsetWidth / 9;
+    
+  
+    if (value <= scrollLimit) {
+        homs.style.left = -58 + value * 0.2 + '%';
+        homs.style.transition = 'left 0.7s ease-in-out'; 
+    } else {
+        homs.style.left = -58 + scrollLimit * 0.2 + '%';
+        homs.style.transition = 'left 0.7s ease-in-out';
+    }
+});
+      const toggleMenu = document.querySelector('.toggle');
+      const navigation = document.querySelector('.navigation');
+      toggleMenu.onclick =function(){
+      toggleMenu.classList.toggle('active')
+      navigation.classList.toggle('active')
+      }
+    </script>
+   
+</body>
+</html>
